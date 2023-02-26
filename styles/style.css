@@ -1,0 +1,129 @@
+/* Importamos las fuentes de Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
+
+/*Colores de la página web*/
+:root{
+    --color-base: #EFF5F5;
+    --color-secundario: #D6E4E5;
+    --color-letras: #497174;
+    --color-resaltar: #EB6440;
+}
+
+
+*{
+    font-family: 'Titillium Web';
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Sección Inicio*/
+.inicio{
+    background: url("../data/triangles.png");
+    background-size: cover;
+    background-position: center center;
+    color: var(--color-secundario);
+}
+.inicio .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+.inicio .contenido-seccion header{
+    padding: 30px;
+}
+
+/* Menú de navegación*/
+
+.inicio .contenido-seccion header nav{
+    position: fixed;
+    margin-left: 60px;
+    background-color: var(--color-resaltar);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+.inicio .contenido-seccion header nav a{
+    display: block;
+    color: var(--color-base);
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* LOGO */
+.inicio .contenido-seccion header .logo {
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: 'Yellowtail';
+    text-shadow: 0 0 35px var(--color-secundario);
+}
+.inicio .contenido-seccion header .logo .color{
+    color: var(--color-resaltar);
+    font-family: 'Yellowtail';
+}
+.inicio .contenido-seccion header .nav-bar{
+    position: fixed;
+    background-color: var(--color-resaltar);
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+.inicio .contenido-seccion header .nav-bar:hover{
+    box-shadow: 0 0 35px var(--color-secundario);
+}
+.inicio .contenido-seccion .info{
+    padding-bottom: 130px;
+}
+.inicio .contenido-seccion .info h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+.inicio .contenido-seccion .info h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+.inicio .contenido-seccion .info .redes{
+    margin: 20px 0;
+}
+.inicio .contenido-seccion .info .redes a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-resaltar);
+    background-color: var(--color-base);
+    border: 1px solid var(--color-resaltar);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: .3s;
+}
+.inicio .contenido-seccion .info .redes a:hover{
+    color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    box-shadow: 0 0 20px var(--color-base);
+    background-color: var(--color-resaltar);
+}
+.inicio .contenido-seccion .foto{
+    position: relative;
+}
+.inicio .contenido-seccion .foto img{
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--color-resaltar);
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    transform: translateX(-50%);
+}

@@ -315,7 +315,7 @@ html{
 .contacto .contenido-seccion .fila .col h2{
     color:var(--color-resaltar);
 }
-#volver-inicio{
+footer #volver-inicio{
     position: fixed;
     background-color: var(--color-resaltar);
     font-size: 20px;
@@ -330,12 +330,14 @@ html{
     transform: translateX(50%);
     opacity: 100%;
     transition: opacity 0.5s;
+    color: var(--color-base);
+    text-align: center;
 }
-#volver-inicio:hover{
+footer #volver-inicio:hover{
     box-shadow: 0 0 35px var(--color-secundario);
     opacity: 60%;
 }
-.hidden{
+footer .hidden{
     display:none;
     opacity: 0%;
 }
@@ -378,5 +380,10 @@ html{
     }
     .contacto .contenido-seccion .fila{
         display: block;
+    }
+}
+@media screen and (max-width: 600px){
+    .habilidades .contenido-habilidades .barra{
+        max-width: 80%;
     }
 }
